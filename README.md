@@ -2,7 +2,7 @@ wraps an ILP solver to solve set cover for tetpc strict minimals
 
 set timelimit to limit how long the solver runs. on timeout it will return the best solution it has found. note that it often finds the optimal solution long before proving that it is the optimal solution, so you are likely to get an optimal/near-optimal solution
 
-`py main_direct_ilp <fumen> <pattern> --output <output_file> --timeLimit <time_limit>`
+`py main_direct_ilp.py <fumen> <pattern> --output <output_file> --timeLimit <time_limit>`
 
 omit output to not save output to a file (note that the answer is always printed to stdout/console)
 
