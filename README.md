@@ -6,7 +6,7 @@ Example: `py main_direct_ilp.py <fumen> <pattern> --output <output_file> --timeL
 
 `--timeLimit` specifies how long to let the ILP solver run. Omit this option to have no time limit. If the time limit is reached before the solver has finished, it will output the best solution it has found so far. Note that often this happens to be the optimal solution, because the solver takes time to prove that a given solution is actually optimal.
 
-When reading the output of the HiGHS ILP solver, 'BestSol' refers to the size of the best solution found, and 'BestBound' refers to the best lower bound found for the size of the optimal solution. For example, if 19.5 then the solver knows that there is no solution with 19 sets or less, but the solution may still be larger than 20.
+When reading the output of the HiGHS ILP solver, 'BestSol' refers to the size of the best solution found, and 'BestBound' refers to the best lower bound found for the size of the optimal solution. For example, if BestBound is 19.5 then the solver knows that there is no solution with 19 sets or less, but the solution may still be larger than 20.
 
 `pip install -r requirements.txt` to install the pulp library and other related dependencies.
 
