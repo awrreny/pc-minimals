@@ -1,7 +1,6 @@
 import argparse
 from util import parse_path_file, prune_uncovered
 from collections import defaultdict
-from solve_direct_ilp import solve_set_cover
 from solve_direct_cpsat import solve_set_cover_cp_sat
 
 # this file takes the same input as the normal sfinder-strict-minimals
